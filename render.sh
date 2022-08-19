@@ -18,5 +18,5 @@ do
 done
 
 echo Rendering README
-pandoc --mathjax -t html ./REAMDE.md -s -o ./pages/index.html --metadata title='Mes Cours'
+pandoc --mathjax -t html ./README.md -s -o ./pages/index.html --metadata title='Mes Cours'
 
