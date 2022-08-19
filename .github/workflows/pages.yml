@@ -1,0 +1,30 @@
+name: Deploy
+on:
+    push:
+        branches: [ main ]
+permissions:
+    contents: write
+
+jobs:
+    deploy:
+        concurrency: ci-${{ github.ref }}
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Pandoc
+              run: |
+                sudo wget https://github.com/jgm/pandoc/releases/download/2.17.0.1/pandoc-2.17.0.1-1-amd64.deb
+                sudo dpkg -i pandoc-2.17.0.1-1-amd64.deb
+
+            - name: Render
+              run: |
+                chmod +x render.sh
+                ./render.sh
+
+            - name: Deploy
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                folder: pages
+
