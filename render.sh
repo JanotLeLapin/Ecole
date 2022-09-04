@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 FILES=$(find . -type f -name '*.md') # Files to render
 
@@ -8,7 +8,8 @@ do
     path=$(dirname $f) # File path
     file=$(basename $f) # File without path
 
-    if [ $file == 'README.md' ]; then
+    if [ $file == 'README.md' ];
+    then
         name='index'
     else
         name=${file%.*}
