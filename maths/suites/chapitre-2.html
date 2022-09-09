@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>chapitre-2</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">chapitre-2</h1>
+</header>
+<h1 id="le-raisonnement-par-récurrence">Le raisonnement par
+récurrence</h1>
+<p>Propriété : pour tout <span class="math inline">\(n \in \mathbb
+N\)</span>, on note <span class="math inline">\((P_n)\)</span> la
+propriété : <span class="math inline">\(2^n \geq n + 1\)</span>.</p>
+<ul>
+<li><span class="math inline">\(n = 1\)</span> : <span
+class="math inline">\(2^1 \geq 1 + 1 \Leftrightarrow 2 \geq
+2\)</span></li>
+<li><span class="math inline">\(n = 2\)</span> : <span
+class="math inline">\(2^2 \geq 2 + 1 \Leftrightarrow 4 \geq
+3\)</span></li>
+</ul>
+<h2 id="ère-étape-initialisation">1ère étape : Initialisation</h2>
+<p>On vérifie pour le plus petit entier naturel de la propriété que
+celle-ci est vraie (en l’occurence pour <span class="math inline">\(n =
+0\)</span>).</p>
+<p>On a donc bien <span class="math inline">\(P_0\)</span> qui est
+vérifiée : <span class="math inline">\(2^0 \geq 0 + 1 \Leftrightarrow 1
+\geq 1\)</span></p>
+<h2 id="ème-étape-hérédité">2ème étape : Hérédité</h2>
+<p>On prend un indice au hasard : soit <span class="math inline">\(n \in
+\mathbb N\)</span> un entier naturel fixé. On suppose que <span
+class="math inline">\(P_n\)</span> est vraie, et on veut démontrer que
+<span class="math inline">\(P_{n+1}\)</span> est vraie</p>
+<p>Comme <span class="math inline">\(P_n\)</span> est vraie, on a :
+<span class="math inline">\(2^n \geq n + 1 \Leftrightarrow 2 \times 2^n
+\geq 2(n+1) \Leftrightarrow 2^{n+1} \geq 2n + 2\)</span></p>
+<p>Or pour tout <span class="math inline">\(n \in \mathbb N\)</span> :
+<span class="math inline">\(2n \geq n\)</span></p>
+<p>D’où : <span class="math inline">\(2^{n+1} \geq n + 2\)</span> donc
+<span class="math inline">\(P_{n+1}\)</span> est vérifiée</p>
+<h2 id="ème-étape-conclusion">3ème étape : Conclusion</h2>
+<p>Soit <span class="math inline">\((u_n) _ {n \in \mathbb N}\)</span>
+par :</p>
+<ul>
+<li><span class="math inline">\(u_0 = -3\)</span></li>
+<li><span class="math inline">\(u_{n+1} = 5 - 4u_n\)</span></li>
+</ul>
+</body>
+</html>
