@@ -18,6 +18,13 @@ struct node *create_node(u32 value) {
     return ptr;
 }
 
+struct node *create_node_with_next(u32 value, struct node *next) {
+    struct node *ptr = create_node(value);
+    ptr->next = next;
+
+    return ptr;
+}
+
 void visit(struct node *node) {
     printf("%d", node->value);
 
@@ -27,6 +34,29 @@ void visit(struct node *node) {
         current = current->next;
     }
     printf("\n");
+}
+
+struct node *get(struct node *list, u32 idx) {
+    u32 i = 0;
+    struct node *current = list;
+    while (i < idx) {
+        current = current->next;
+        i++;
+    }
+
+    return current;
+}
+
+void insert(struct node *list, u32 idx, struct node *node) {
+    u32 i = 0;
+    struct node *current = list;
+    while (i < idx) {
+        current = current->next;
+        i++;
+    }
+
+    node->next = current->next;
+    current->next = node;
 }
 
 // Vector
@@ -46,18 +76,16 @@ u32 *push(u32 *ptr, u32 value) {
 }
 
 int main() {
-    struct node *node_1 = create_node(1);
-    struct node *node_2 = create_node(2);
-    struct node *node_3 = create_node(3);
+    struct node *ll = create_node_with_next(1, create_node_with_next(2, create_node(3)));
 
-    node_1->next = node_3;
-    node_3->next = node_2;
+    visit(ll);
 
-    visit(node_1);
+    for (u32 i = 0; i < 3; i++) {
+        printf("ll[%d] = %d\n", i, get(ll, i)->value);
+    }
 
-    free(node_1);
-    free(node_2);
-    free(node_3);
+    insert(ll, 1, create_node(6));
+    visit(ll);
 
     u32 *vec = create_vector();
     vec = push(vec, 6);
@@ -66,7 +94,7 @@ int main() {
     vec = push(vec, 2);
     vec = push(vec, 0);
 
-    for (int i = 1; i < *vec; i++) {
+    for (u32 i = 1; i < *vec; i++) {
         printf("vec[%d] = %d\n", i, *(vec+i));
     }
 
