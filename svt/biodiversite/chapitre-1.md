@@ -31,3 +31,29 @@ On peut prélever de l'ADN dans le milieu environnant, le séquencer et le compa
 
 Si l'ADN n'a aucune correspondance, on sait que l'ADN appartient à une espèce inconnue.
 
+## Comment estimer l'abondance d'une population dont les individus sont mobiles ?
+
+### La méthode capture recapture
+
+1. On capture une proportion d'individus (M) dans une population (N)
+2. On recapture une même proportion d'individus (n) dans une population (N). On compte le nombre d'individus marqués dans la 2ème capture (m).
+
+On a donc $\frac m n = \frac M N \Leftrightarrow N = \frac {nM} m$
+
+### TP : application du protocole
+
+On a une population de haricots rouges et une population de haricots blancs, on essaie d'estimer le nombre de haricots blancs.
+
+$n = 20$
+
+$m_n$ le nombre de haricots rouge dans la $n$ ème recapture
+
+- $M = 30$
+- $m_0 = 4$ : $N_0 = 150$
+- $m_1 = 7$ : $N_1 = 86$
+- $m_2 = 5$ : $N_2 = 120$
+- $m_3 = 6$ : $N_3 = 100$
+
+$\frac {(N_0 + N_1 + N_2 + N_3)} 4 = 114$
+
+
