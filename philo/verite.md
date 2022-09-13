@@ -4,3 +4,13 @@ On considère d'abord que la vérité est l'accord entre ce que l'on dit et ce q
 
 En tant qu'humains, on a tendance à voir la vérité de manière différente : si quelqu'un considère que quelque chose est vrai, alors c'est est vrai pour cette personne. La vérité n'est quelque chose sur lequel on peut se mettre d'accord, ni quelque chose que l'on peut décider (consensus). Si c'était le cas, la vérité serait quelque chose sur lequel on peut se mettre d'accord, et par conséquent toute affirmation pourrait être vraie. La vérité doit être justifiée.
 
+### Remarques
+
+- Une erreur n'est pas une illusion : l'erreur disparaît quand on la comprend, mais l'illusion persiste.
+
+### Définitions
+
+- Un axiome est ce qu'on prend pour acquis sans être démontré
+- Un principe est ce qui est premier dans un ordre logique
+- Est nécessaire ce qui ne peut pas ne pas être
+
