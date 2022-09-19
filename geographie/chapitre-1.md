@@ -23,3 +23,13 @@ Le canal de Panama a du être élargi à cause du gigantisme des navires.
 
 80% des communications mondiales s'effectuent grâce à des cables sous-marins.
 
+Les ports mondiaux, des noeux stratégiques sur les routes maritimes.
+
+Pour rester compétitif, un port doit constamment s'adapter : pour l'accueil des bateaux de gros tonnage pour stocker des marchandises, pour automatiser le chargement et le déchargement, et pour avoir un réseau de transport avec l'arrière pays.
+
+Les échanges maritimes sont vitaux pour l'économie mondiale. Par ailleurs, mers et océans représentent d'autres enjeux économiquesliés à l'exploitation des resources.
+
+Les ressources minières sont des composants nécessaires dans les industries de haute technologie.
+
+On pense qu'à-peu-près un tiers des espèces de poisson existantes sont surexploitées. La surpêche représente une menace sur l'écosystème et sur la biodiversité des océans.
+
