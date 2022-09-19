@@ -10,7 +10,13 @@ En tant qu'humains, on a tendance à voir la vérité de manière différente : 
 
 ### Définitions
 
-- Un axiome est ce qu'on prend pour acquis sans être démontré
+- Un axiome est ce qu'on prend pour acquis mais qui ne peut pas être démontré
 - Un principe est ce qui est premier dans un ordre logique
 - Est nécessaire ce qui ne peut pas ne pas être
+
+L'axiome, comme toutes les disciplines scientifiques, dépendent du principe de contradiction, si on peut démontrer qu'un axiome est faux, alors ce n'est pas un axiome.
+
+En science, on considère qu'une théorie est valide tant qu'elle résiste au principe de contradiction. On parle sinon de pseudo-science.
+
+La vérité est un concept que l'on s'impose, on peut vivre sans.
 
