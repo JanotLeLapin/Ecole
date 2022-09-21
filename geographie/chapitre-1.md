@@ -33,3 +33,31 @@ Les ressources minières sont des composants nécessaires dans les industries de
 
 On pense qu'à-peu-près un tiers des espèces de poisson existantes sont surexploitées. La surpêche représente une menace sur l'écosystème et sur la biodiversité des océans.
 
+### Des milieux pollués
+
+- Par les hydrocarbures, les opérations de dégazage des bateaux.
+- Par les marées noires, les cargaisons de pétrole se répandent dans les océans.
+- Par l'acidification des océans, les rejets de CO2.
+
+### Mesures de protections
+
+- Grâce aux états, création d'aires marines protégées où l'exploitation est réglementée.
+
+## Des espaces convoités, zones de tensions
+
+- Tension entre la **liberté des mers** (principe traditionel selon lequel la mer et les océans n'appartiennent à personne) et la volonté de nationaliser les espaces maritimes.
+- La Zone Economique Exclusive (ZEE) est définie comme la zone allant jusqu'à 200 milles (370 km) au-delà de la côte et qui résèrve l'exploitation de la mer à l'état riverrain.
+
+La conférence des États-Unis a fondé la liberté d'accès au détroit (exemple : détroit de Malacca).
+
+- president de philipines, rodrigo dutertes,veut partager les ressources halieutiques entre les territoires de Chine meridionale; cela aidera pekin pour ouvrir les portes a l'exploitation avec les pays d'asie du sud
+- il dit que la mer appartient a la chine depuis des année donc maintenant aussi
+- cette decision contrerait la decision internationale faite en 2016, renforcerant la place de la chine et les tensions entre l'amerique et la chine
+- cette decision a été renforcé millitairement par des menaces de guerres et des fleets de bateau de guerres vers le zone nommé le reed bank
+- une decision internationale a été faite après pour redonner controle au philipines mais la chine a refusé de conformer
+- la chine prétend posséder la mer de chine, au même titre qu'elle prétend posséder Taïwan, pour des raisons économiques.
+
+- coopération entre plusieurs états de mer de chine pour limiter la piraterie et la pollution.
+- volonté chinoise de limiter l'accès à la mer de chine à travers la construction de murs de sable.
+- tensions croissantes entre la chine et les États-Unis au nom de la liberté.
+
