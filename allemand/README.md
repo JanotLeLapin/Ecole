@@ -8,3 +8,18 @@ Ich bin ein Berliner
 
 Dieses System ist gut, alle Bürgerinnen und Bürger hat mehr Wahl.
 
+## Subjonctif
+
+Auxiliaires :
+
+- sein : ich wäre
+- haben : ich hätte
+- werden : ich würde
+
+Modaux :
+
+- dürfen : ich dürfte
+- können : ich könnte
+- müssen : ich müsste
+- sollten : ich söllte
+
