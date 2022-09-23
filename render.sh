@@ -8,7 +8,7 @@ do
     path=$(dirname $f) # File path
     file=$(basename $f) # File without path
 
-    if [ $file == 'README.md' ];
+    if [ $file == 'readme.md' ];
     then
         name='index'
     else
