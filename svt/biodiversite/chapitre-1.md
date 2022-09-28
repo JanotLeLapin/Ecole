@@ -56,4 +56,6 @@ $m_n$ le nombre de haricots rouge dans la $n$ ème recapture
 
 $\frac {(N_0 + N_1 + N_2 + N_3)} 4 = 114$
 
+La proportion d'individus marqués lors de la recapture va bien sûr varier d'un échantillon à l'autre. On parle alors de fluctuation d'échantillonage. Pour limiter les erreurs dues à ces fluctuations, il est donc indispensable d'effectuer un **maximum de recaptures**, de même effectif, où l'on compte à chaque fois le nombre d'individus marqués et de faire une **moyenne des résultats obtenus**. Plus le nombre d'individus capturé est grand, plus l'estimation sera proche de la réalité.
+
 
