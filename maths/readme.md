@@ -5,4 +5,5 @@ Le dossier `sources` contient des algorithmes écrits en Haskell capables de ré
 ## Contenu
 
 - [Les Suites](https://janotlelapin.github.io/Ecole/maths/suites)
+- [Dérivabilité et Continuité](https://janotlelapin.github.io/Ecole/maths/continuite)
 
