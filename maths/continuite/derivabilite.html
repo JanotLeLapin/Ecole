@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>derivabilite</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">derivabilite</h1>
+</header>
+<h1 id="rappels-de-première">1. Rappels de première</h1>
+<h2 id="définition">Définition</h2>
+<p>Soit <span class="math inline">\(f\)</span> une fonction dérivée sur
+un intervalle <span class="math inline">\(I\)</span> et soient <span
+class="math inline">\(a \in I\)</span> et <span class="math inline">\(b
+\in I\)</span>. Le <strong>taux de variations (ou taux
+d’acroissement)</strong> entre <span class="math inline">\(a\)</span> et
+<span class="math inline">\(b\)</span> est égal à <span
+class="math inline">\(\frac {f(b) - f(a)} {b - a}\)</span></p>
+<p>Soit <span class="math inline">\(f\)</span> une fonction dérivée sur
+un intervalle <span class="math inline">\(I\)</span> et soient <span
+class="math inline">\(a \in I\)</span> et <span class="math inline">\(h
+\in \mathbb R\)</span> tel que <span class="math inline">\(a + h \in
+I\)</span>. On dit que <span class="math inline">\(f\)</span> est
+<strong>dérivable</strong> en <span class="math inline">\(a\)</span>
+noté <span class="math inline">\(f&#39;(a)\)</span> si la limite lorsque
+<span class="math inline">\(h\)</span> tend vers 0 du taux de variations
+de <span class="math inline">\(f\)</span> entre <span
+class="math inline">\(a\)</span> et <span class="math inline">\(a +
+h\)</span> est unique :</p>
+<p><span class="math inline">\(f&#39;(a) = \lim_{h \to 0} \frac {f(a +
+h) - f(a)} h\)</span></p>
+<h3 id="remarque">Remarque</h3>
+<p>Soit <span class="math inline">\(A (a; f(a))\)</span> et <span
+class="math inline">\(B (b; f(b))\)</span> alors la droite <span
+class="math inline">\((AB)\)</span> a pour coefficient directeur le taux
+de variations entre <span class="math inline">\(a\)</span> et <span
+class="math inline">\(b\)</span>.</p>
+<h3 id="propriété">Propriété</h3>
+<p>Soit <span class="math inline">\(f\)</span> une fonction définie et
+dérivable sur un intervalle <span class="math inline">\(I\)</span> et
+<span class="math inline">\(a \in I\)</span>. Alors la tangente à <span
+class="math inline">\(f\)</span> en <span
+class="math inline">\(a\)</span>, notée <span
+class="math inline">\(T_a\)</span>, admet comme coefficient directeur
+<span class="math inline">\(f&#39;(a)\)</span> et admet comme équation
+de droite : <span class="math inline">\(y = f&#39;(a)(x - a) +
+f(a)\)</span></p>
+<h3 id="remarque-1">Remarque</h3>
+<p>La fonction racine carrée définie sur <span
+class="math inline">\({\mathbb R} _ +\)</span> et dérivable sur <span
+class="math inline">\({\mathbb R} _ + ^ \star\)</span> . Elle n’est donc
+pas dérivable sur 0.</p>
+<h3 id="théorème">Théorème</h3>
+<p>Soit <span class="math inline">\(f\)</span> une fonction définie et
+dérivable sur un intervalle <span class="math inline">\(I\)</span>.
+Alors on a :</p>
+<ul>
+<li>Si pour tout <span class="math inline">\(x \in I ; f&#39;(x) &lt;
+0\)</span> alors <span class="math inline">\(f\)</span> est strictement
+décroissante sur <span class="math inline">\(I\)</span>.</li>
+<li>Si pour tout <span class="math inline">\(x \in I ; f&#39;(x) &gt;
+0\)</span> alors <span class="math inline">\(f\)</span> est strictement
+croissante sur <span class="math inline">\(I\)</span>.</li>
+</ul>
+<h3 id="théorème-1">Théorème</h3>
+<p>Soit <span class="math inline">\(f\)</span> une fonction définie et
+dérivable sur <span class="math inline">\(I\)</span>.</p>
+<ul>
+<li>Pour tout <span class="math inline">\(x \in I : f&#39;(x) \leq 0
+\Leftrightarrow f\)</span> est décroissante sur <span
+class="math inline">\(I\)</span>.</li>
+<li>Pour tout <span class="math inline">\(x \in I : f&#39;(x) \geq 0
+\Leftrightarrow f\)</span> est croissante sur <span
+class="math inline">\(I\)</span>.</li>
+</ul>
+<h3 id="théorème-2">Théorème</h3>
+<p>Soit <span class="math inline">\(f\)</span> une fonction définie et
+dérivable sur <span class="math inline">\(I\)</span> et soit <span
+class="math inline">\(x_0 \in I\)</span>.</p>
+<ul>
+<li>Si <span class="math inline">\(f\)</span> admet un extremum local en
+<span class="math inline">\(x_0\)</span> alors <span
+class="math inline">\(f&#39;(x_0) = 0\)</span>.</li>
+<li>Si <span class="math inline">\(f&#39;(x_0) = 0\)</span> et si <span
+class="math inline">\(f&#39;\)</span> change de signe en <span
+class="math inline">\(x_0\)</span> alors <span
+class="math inline">\(f\)</span> admet un extremum local en <span
+class="math inline">\(x_0\)</span></li>
+</ul>
+</body>
+</html>
