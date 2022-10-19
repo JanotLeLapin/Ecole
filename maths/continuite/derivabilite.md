@@ -43,3 +43,30 @@ Soit $f$ une fonction définie et dérivable sur $I$ et soit $x_0 \in I$.
 - Si $f$ admet un extremum local en $x_0$ alors $f'(x_0) = 0$.
 - Si $f'(x_0) = 0$ et si $f'$ change de signe en $x_0$ alors $f$ admet un extremum local en $x_0$
 
+# Composée de fonctions
+
+## Définition
+
+Soit $f$ une fonction définie sur $D_f$ et $g$ une fonction définie sur $D_g$. Alors la **composée** de $f$ par $g$, notée $g \circ f$, est la fonction définie sur l'ensemble $E$ des $x \in D_f$ tels que $f(x) \in D_g$, tel que pour tout $x \in E$ :
+
+- $g \circ f \colon E \to \mathbb R$
+- $g \circ f \colon x \to g(f(x))$
+
+### Remarque
+
+La composée n'est pas commutative : $f \circ g \neq g \circ f$
+
+### Propriété
+
+- Soit $f$ définie et dérivable sur $I$
+- Soit $g$ définie et dérivable sur $J$
+- Soit $E$ l'ensemble des réels $x \in I$ tels que $f(x) \in J$.
+
+Alors la composée de $f$ par $g$ ($g \circ f$) est dérivable sur $E$ et pour tout $x \in E$ :
+
+$( \circ f)'(x) = f'(x) \times g' \circ f(x)$
+
+### Exemple
+
+- $(e^{u(x)})' = u'(x) \times e^{u(x)}$
+
