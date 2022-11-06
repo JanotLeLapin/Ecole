@@ -144,6 +144,9 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
   </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -159,5 +162,89 @@ et Continuité</h1>
 <li><a
 href="https://janotlelapin.github.io/Ecole/maths/continuite/derivabilite">Continuité</a></li>
 </ul>
+<h2 id="continuité">Continuité</h2>
+<h3 id="définition-pas-très-rigoureuse">Définition pas très
+rigoureuse</h3>
+<p>En première approche, on dira qu’une fonction est
+<strong>continue</strong> sur un intervalle I si on n’a pas besoin de
+“lever le stylo” en traçant sa courbe représentative.</p>
+<h3 id="propriétés-admises">Propriétés (admises)</h3>
+<ul>
+<li>Soit <span class="math inline">\(f\)</span> et <span
+class="math inline">\(g\)</span> deux fonctions continues sur <span
+class="math inline">\(I\)</span>, soit <span
+class="math inline">\(\lambda \in \mathbb R\)</span>. Alors <span
+class="math inline">\(f+g\)</span>, <span class="math inline">\(f \times
+g\)</span>, <span class="math inline">\(\lambda f\)</span> et <span
+class="math inline">\(f^n\)</span> sont continues sur <span
+class="math inline">\(I\)</span>.</li>
+<li>La composée de fonctions continues est continue.</li>
+<li>Si <span class="math inline">\(g \neq 0\)</span> sur <span
+class="math inline">\(I\)</span> alors <span class="math inline">\(\frac
+1 g\)</span> et <span class="math inline">\(\frac f g\)</span> sont
+continues sur I.</li>
+<li>Les fonctions affines, polynômiales et rationnelles sont des
+fonctions continues sur leur ensemble de définition.</li>
+</ul>
+<h3 id="propriété-sur-la-dérivation">Propriété sur la dérivation</h3>
+<p>Soit <span class="math inline">\(f\)</span> une fonction dérivable
+sur un intervalle <span class="math inline">\(I\)</span>.</p>
+<p>Alors <span class="math inline">\(f\)</span> est continue sur <span
+class="math inline">\(I\)</span> : si une fonction est dérivable, alors
+elle est forcément continue.</p>
+<h3 id="remarque">Remarque</h3>
+<p>Une fonction continue n’est pas forcément dérivable (exemple de la
+fonction absolue)</p>
+<h2 id="théorème-des-valeurs-intermédiaires">Théorème des valeurs
+intermédiaires</h2>
+<p>Soit <span class="math inline">\(f\)</span> une fonction continue sur
+un intervalle <span class="math inline">\([c;b]\)</span></p>
+<p>Soit <span class="math inline">\(k\)</span> un réel compris entre
+<span class="math inline">\(f(a)\)</span> et <span
+class="math inline">\(f(b)\)</span>. Alors il existe un réel <span
+class="math inline">\(c\)</span> appartenant à l’intervalle <span
+class="math inline">\([a;b]\)</span> tel que : <span
+class="math inline">\(f(c) = k\)</span></p>
+<h2 id="corollaire-du-théorème-des-valeurs-intermédiaires">Corollaire du
+théorème des valeurs intermédiaires</h2>
+<p>Soit <span class="math inline">\(f\)</span> une fonction continue sur
+<span class="math inline">\([c;b]\)</span> et
+<strong>strictement</strong> monotone sur <span
+class="math inline">\([a;b]\)</span></p>
+<p>Soit <span class="math inline">\(k\)</span> un réel compris entre
+<span class="math inline">\(f(a)\)</span> et <span
+class="math inline">\(f(b)\)</span></p>
+<p>Alors il existe un <strong>unique</strong> réel <span
+class="math inline">\(c \in [a;b]\)</span> tel que : <span
+class="math inline">\(f(c) = k\)</span></p>
+<h3 id="propriété">Propriété</h3>
+<p>Soit <span class="math inline">\(f\)</span> une fonction dérivable
+sur un intervalle <span class="math inline">\(I\)</span>.</p>
+<ul>
+<li>Si <span class="math inline">\(f&#39;\)</span> ne s’annule qu’en un
+nombre fini de points tout en étant strictement négative, alors <span
+class="math inline">\(f\)</span> est strictement décroissante.</li>
+<li>Si <span class="math inline">\(f&#39;\)</span> ne s’annule qu’en un
+nombre fini de points tout en étant strictement positive, alors <span
+class="math inline">\(f\)</span> est strictement croissante.</li>
+</ul>
+<h3 id="exemple">Exemple</h3>
+<p>Soit <span class="math inline">\(f\)</span> définie par :</p>
+<p><span class="math inline">\(f(x) = 3x^3 - 6x^2 + 4x + 1\)</span></p>
+<p>Montrer que <span class="math inline">\(f(x) = 0\)</span> admet une
+unique solution sur <span class="math inline">\([-2;2]\)</span> et
+donner un encadrement à <span class="math inline">\(10^{-3}\)</span>
+près de cette solution.</p>
+<p><span class="math inline">\(f&#39;(x) = 9x^2 - 12x + 4\)</span></p>
+<p><span class="math inline">\(\Delta = b^2 - 4 \times a \times c = 81 -
+4 \times 12 \times 4 = -111\)</span></p>
+<p>Le discriminant de <span class="math inline">\(f&#39;\)</span> est
+négatif, la fonction <span class="math inline">\(f&#39;\)</span> n’a
+donc aucune racine. Comme <span class="math inline">\(a\)</span> est
+positif, la fonction <span class="math inline">\(f\)</span> est donc
+strictement positif pour tout <span class="math inline">\(x \in
+I\)</span>.</p>
+<p><span class="math inline">\(f(x) = 0\)</span> admet donc une seule
+solution sur <span class="math inline">\(I\)</span>.</p>
 </body>
 </html>
