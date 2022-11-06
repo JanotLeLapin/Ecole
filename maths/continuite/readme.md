@@ -41,3 +41,26 @@ Soit $k$ un réel compris entre $f(a)$ et $f(b)$
 
 Alors il existe un **unique** réel $c \in [a;b]$ tel que : $f(c) = k$
 
+### Propriété
+
+Soit $f$ une fonction dérivable sur un intervalle $I$.
+
+- Si $f'$ ne s'annule qu'en un nombre fini de points tout en étant strictement négative, alors $f$ est strictement décroissante.
+- Si $f'$ ne s'annule qu'en un nombre fini de points tout en étant strictement positive, alors $f$ est strictement croissante.
+
+### Exemple
+
+Soit $f$ définie par :
+
+$f(x) = 3x^3 - 6x^2 + 4x + 1$
+
+Montrer que $f(x) = 0$ admet une unique solution sur $[-2;2]$ et donner un encadrement à $10^{-3}$ près de cette solution.
+
+$f'(x) = 9x^2 - 12x + 4$
+
+$\Delta = b^2 - 4 \times a \times c = 81 - 4 \times 12 \times 4 = -111$
+
+Le discriminant de $f'$ est négatif, la fonction $f'$ n'a donc aucune racine. Comme $a$ est positif, la fonction $f$ est donc strictement positif pour tout $x \in I$.
+
+$f(x) = 0$ admet donc une seule solution sur $I$.
+
